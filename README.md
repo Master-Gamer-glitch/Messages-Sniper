@@ -1,2 +1,4 @@
 # Messages-Sniper
-Snipes Messages That Are Deleted In Discord
+Code To Snipe/Retain Deleted Messages In Discord!
+
+#Find Me On Discord:
