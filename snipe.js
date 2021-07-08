@@ -16,8 +16,8 @@ Client.on('messageDelete', async (message) => {
 Client.on('message', message => {
     if(message.content === prefix + 'snipe'){
         const embed = new Discord.MessageEmbed()
-        .setAuthor(peep.tag, peep.avatarURL())
-        .setDescription(msg)
+        .setAuthor(sender.tag, sender.avatarURL({dynamic: true}))
+        .setDescription(content)
         .setFooter("Sniped The Message Lol ☠🔥")
         .setTimestamp();
         message.channel.send(embed);
@@ -26,4 +26,5 @@ Client.on('message', message => {
 })
 
 Client.login('token')                                                  // ENTER YOUR BOT TOKEN
+                                                                       // BOT WILL NOT SNIPE MESSAGES SENT/DELETED BEFORE THE BOT WAS ONLINE!
                                                                        // HOPE YOU LIKE IT
